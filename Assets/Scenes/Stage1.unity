@@ -227,48 +227,6 @@ Transform:
   - {fileID: 1468770104}
   m_Father: {fileID: 0}
   m_RootOrder: 1
---- !u!1001 &704372499
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 409436, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: -2.6
-      objectReference: {fileID: 0}
-    - target: {fileID: 409436, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -1.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 409436, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409436, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409436, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409436, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 409436, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 409436, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
-      propertyPath: m_RootOrder
-      value: 4
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &803139575 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 148104, guid: ab8883b4a4eff4ce9bd1ab82cf56545c, type: 2}
@@ -277,6 +235,19 @@ GameObject:
 Transform:
   m_PrefabParentObject: {fileID: 457764, guid: ab8883b4a4eff4ce9bd1ab82cf56545c, type: 2}
   m_PrefabInternal: {fileID: 1979250909}
+--- !u!114 &803139577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 803139575}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01dde07374d524104bf0fef3fd252421, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shotPrefab: {fileID: 409436, guid: 2fc960edb609e4345a1a967a727ad2bf, type: 2}
+  shootingRate: 0.25
 --- !u!50 &803139579
 Rigidbody2D:
   serializedVersion: 2
