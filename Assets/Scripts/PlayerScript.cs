@@ -49,4 +49,16 @@ public class PlayerScript : MonoBehaviour {
 		//Here we affect the movement to the object.
 		GetComponent<Rigidbody2D>().velocity = movement;
 	}
+
+	void OnCollisionEnter2D(Collision2D collision)
+	{
+		bool damagePlayer = false;
+
+		EnnemyScript ennemy = collision.gameObject.GetComponent<EnnemyScript> ();
+
+		if (ennemy != null) 
+		{
+			Destroy (gameObject);	
+		}
+	}
 }
