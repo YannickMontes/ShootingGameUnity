@@ -27,6 +27,21 @@ public class PlayerScript : MonoBehaviour {
 
 		//We affect the movement in function of speed.
 		movement = new Vector2 (speed.x * inputX, speed.y * inputY);
+
+		//Here we get the action of shooting by pressing space button.
+		bool shoot = Input.GetKeyDown (KeyCode.Space);
+		//shoot |= Input.GetKeyDown (KeyCode.Space);
+		//If the player press space.
+		if (shoot) 
+		{
+			//We get the weapon
+			WeaponScript weapon = GetComponent<WeaponScript> ();
+			if (weapon != null) 
+			{
+				//False because player is not an ennemy.
+				weapon.Attack (false);
+			}
+		}
 	}
 
 	void FixedUpdate()
